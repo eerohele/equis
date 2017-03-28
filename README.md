@@ -19,3 +19,5 @@ C:\> Path\To\Equis.exe watch --stylesheet My-Awesome-Stylesheet.xsl --source My-
 
 To transform once instead of watching files for changes, use
 `Equis.exe transform ...` instead.
+
+For more information, see `Equis.exe watch --help` and `Equis.exe transform --help`.
