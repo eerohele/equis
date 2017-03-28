@@ -1,0 +1,7 @@
+Argu 
+Costura.Fody
+FSharp.Collections.ParallelSeq
+FSharp.Control.Reactive
+FSharp.Core
+Serilog
+Serilog.Sinks.Literate

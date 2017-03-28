@@ -1,0 +1,26 @@
+source https://nuget.org/api/v2
+
+nuget Argu
+nuget Costura.Fody content: once
+nuget FSharp.Collections.ParallelSeq
+nuget FSharp.Control.Reactive
+nuget FSharp.Core redirects: on
+nuget Serilog
+nuget Serilog.Sinks.Literate
+nuget System.Reactive.Core
+nuget System.Reactive.Interfaces
+nuget System.Reactive.Linq
+
+group Build
+  source https://nuget.org/api/v2
+
+  nuget SourceLink.Fake
+  nuget FAKE
+  nuget FSharp.Formatting
+
+  github fsharp/FAKE modules/Octokit/Octokit.fsx
+
+group Test
+  source https://nuget.org/api/v2
+
+  nuget Expecto
