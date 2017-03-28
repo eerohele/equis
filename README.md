@@ -7,13 +7,15 @@ When the stylesheet changes, transform all source files.
 
 When a source file changes, transform only that file.
 
+Optionally, validate both the source and target files against an XML schema.
+
 ## Use
 
 1. [Download](https://github.com/eerohele/equis/releases).
 2. Run. Example:
 
 ```
-C:\> Path\To\Equis.exe watch --stylesheet My-Awesome-Stylesheet.xsl --source My-Awesome-Input-Directory
+C:\> Path\To\Equis.exe watch --stylesheet My-Awesome-Stylesheet.xsl --source My-Awesome-Input-Directory --output-schema My-Awesome-Xml-Schema.xsd
 [15:16:50 INF] Watching My-Awesome-Stylesheet.xsl and My-Awesome-Input-Directory/*.xml for changes.
 ```
 
