@@ -9,6 +9,8 @@ module Transformers =
         open System.Xml.Schema
         open System.Xml.Xsl
 
+        open FSharp.Collections.ParallelSeq
+
         type XsltArgumentList with
             static member OfIDictionary(dictionary: IDictionary<XmlQualifiedName, obj>) =
                 let args = XsltArgumentList()
@@ -41,7 +43,7 @@ module Transformers =
 
                 let transform = fun (xf: Transformation) ->
                     xf.Sources
-                    |> Seq.map (fun source ->
+                    |> PSeq.map (fun source ->
                         let targetPath = Path.Combine(xf.Target.FullName, source.Name)
                         let parameters = XsltArgumentList.OfIDictionary(xf.Parameters)
 
