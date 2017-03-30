@@ -39,7 +39,7 @@ module Equis =
                 | Watch _ -> "watch an XSLT stylesheet and a directory of XML source files for changes and transform them"
                 | Transform _ -> "transform a directory of XML source files with an XSLT stylesheet"
 
-    let private defaultOutputDirectory = Path.Combine(Directory.GetCurrentDirectory(), "out")
+    let private defaultOutputDirectory = Path.Combine(Directory.GetCurrentDirectory(), "target")
 
     let private loadSchema path =
         match (path |> XmlSchemaSet.Load) with
