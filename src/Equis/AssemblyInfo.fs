@@ -5,8 +5,8 @@ open System.Reflection
 [<assembly: AssemblyTitleAttribute("Equis")>]
 [<assembly: AssemblyProductAttribute("Equis")>]
 [<assembly: AssemblyDescriptionAttribute("Execute an XSLT transformation when either the stylesheet or source files change.")>]
-[<assembly: AssemblyVersionAttribute("0.1.0")>]
-[<assembly: AssemblyFileVersionAttribute("0.1.0")>]
+[<assembly: AssemblyVersionAttribute("0.1.1")>]
+[<assembly: AssemblyFileVersionAttribute("0.1.1")>]
 [<assembly: AssemblyConfigurationAttribute("Release")>]
 do ()
 
@@ -14,6 +14,6 @@ module internal AssemblyVersionInformation =
     let [<Literal>] AssemblyTitle = "Equis"
     let [<Literal>] AssemblyProduct = "Equis"
     let [<Literal>] AssemblyDescription = "Execute an XSLT transformation when either the stylesheet or source files change."
-    let [<Literal>] AssemblyVersion = "0.1.0"
-    let [<Literal>] AssemblyFileVersion = "0.1.0"
+    let [<Literal>] AssemblyVersion = "0.1.1"
+    let [<Literal>] AssemblyFileVersion = "0.1.1"
     let [<Literal>] AssemblyConfiguration = "Release"
